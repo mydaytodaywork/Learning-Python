@@ -1,0 +1,75 @@
+	MUTABLE:
+----------------
+##Some values in python can be modified, and some cannot. 
+This does not ever mean that we can’t change the value of a variable,but if a variable contains a value of an immutable type, 
+we can only assign it a new value. 
+We cannot alter the existing value in any way.
+
+Integers, floating-point numbers and strings are all immutable types.
+Lists and dictionaries are mutable, and so are most objects that we are likely to write ourselves.
+
+
+	PASS STATEMENT:
+------------------------
+The pass statement is a null operation; nothing happens when it executes.
+The pass is also useful in places where your code will eventually go, but has not been written yet 
+
+	SCOPES
+-------------------------
+The nonlocal assignment changes scope_test‘s binding of class variables, 
+and the global assignment changed the module-level binding.
+
+	Tuples
+------------------------
+Tuples are immutable.
+To let Python know that we want to create a tuple, we have to add a trailing comma
+
+	Formatting
+------------------------
+print("%d %d %d" % (1, 2, 3))
+Note the use of % and no commas ( , )
+
+	General
+------------------------
+1.The sorted function returns a list object.
+2.All functions do actually return something, even if we don’t define a return value – the default return value is None, 
+which is what our mystery output is set to.
+
+# this is an empty dictionary
+a = {}
+
+# this is how we make an empty set
+b = set()
+
+	No Polymorphism
+-------------------------
+In Python, there can only be one function with a particular name defined in the scope – if you define another function with the same name, 
+you will overwrite the first function.
+You must call this function with the correct number of parameters, otherwise you will get an error.
+
+	Parameter Passing
+--------------------------	
+Mixed Parameters are also allowed
+we can specify names directly but before positional parameters and then name parameters are allowed
+
+	Constructor
+---------------------------
+__init__ is sometimes called the object’s constructor, because it is used similarly to the way that constructors are used in other languages, 
+but that is not technically correct – it’s better to call it the initialiser. 
+There is a different method called __new__ which is more analogous to a constructor, but it is hardly ever used.
+
+Self means object itself is passed in the first parameter.
+
+
+	Class Variables
+---------------------------------
+We define class attributes in the body of a class, at the same indentation level as method definitions (one level up from the insides of methods).
+
+We can check what properties are defined on an object using the dir function
+eg. dir(int) to see what properties do int have...
+check it.!
+
+	Sorting
+---------------------------------
+
+Python uses timsort , a modification of merge sort. It is combined with insertion sort.

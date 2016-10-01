@@ -1,0 +1,6 @@
+1. Regular Expressions
+2. Decorators
+3. Lambda
+4. Class method and static method
+5. Class decorator
+6. Inheritance
